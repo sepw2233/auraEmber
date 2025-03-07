@@ -1,0 +1,85 @@
+/* Cart page */
+body {
+    background-color: #e9cac8; /* background color */
+    color: #0c0f17; /* text color */
+}
+
+/* Headers */
+h2, h3, h4 {
+    color: #b1a79c; /* header color */
+}
+
+/* Cart Container */
+.wp-block-woocommerce-cart {
+    background-color: #f0f0f0; /* white background for contrast */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Cart Items */
+.wp-block-woocommerce-cart-items-block {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+}
+.woocommerce a.button.add_to_cart_button,
+.woocommerce button.button.single_add_to_cart_button .wc-block-components-quantity-selector__input {
+    background-color: #b1a79c; 
+    color: #000000; 
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.woocommerce a.button.add_to_cart_button:hover,
+.woocommerce button.button.single_add_to_cart_button:hover {
+    background-color: #918880; 
+}
+
+.wc-block-components-button__text{
+    color: #000000 !important;
+}
+/* Cross-sell Products Section */
+.wp-block-woocommerce-cart-cross-sells-block {
+    background-color: #c37e95;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Cart Summary */
+.wp-block-woocommerce-cart-order-summary-block {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Buttons */
+button, .wp-block-woocommerce-proceed-to-checkout-block a {
+    background-color: #e79fb5; /* button color */
+    color: #0c0f17; /* text color */
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+}
+
+button:hover, .wp-block-woocommerce-proceed-to-checkout-block a:hover {
+    background-color: #c37e95;
+}
+
+/* Empty Cart Message */
+.wp-block-woocommerce-empty-cart-block {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Product Grid for New Items */
+.wp-block-woocommerce-product-new {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+}
