@@ -73,13 +73,298 @@ button:hover, .wp-block-woocommerce-proceed-to-checkout-block a:hover {
 .wp-block-woocommerce-empty-cart-block {
     text-align: center;
     background-color: #f0f0f0;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
 }
 
 /* Product Grid for New Items */
 .wp-block-woocommerce-product-new {
     background-color: #f0f0f0;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
 }
+
+
+/* My Account
+.woocommerce-MyAccount-content,
+.woocommerce-MyAccount-navigation {
+    background-color: #e9cac8; 
+    color: #0c0f17; 
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Navigation Menu 
+.woocommerce-MyAccount-navigation ul {
+    list-style: none;
+    padding: 0;
+} */
+
+.woocommerce-MyAccount-navigation li {
+    max-width: 150px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #c37e95; /* Secondary */
+}
+
+.woocommerce-MyAccount-navigation a {
+    color: #f0f0f0; /* White */
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.woocommerce-MyAccount-navigation a:hover {
+    background-color: #e79fb5; /* Button */
+    color: #1e1e1e; /* Black */
+}
+
+/* Account Forms */
+/* .woocommerce form {
+    background-color: #f0f0f0; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+} */
+
+/* Buttons */
+.woocommerce-button {
+    background-color: #e79fb5; /* Button */
+    color: #1e1e1e; /* Black */
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    
+}
+
+.woocommerce-button:hover {
+    background-color: #c37e95; /* Secondary */
+    color: #f0f0f0; /* White */
+}
+
+/* Layout for My Account Page */
+.woocommerce-MyAccount-container {
+    display: flex;
+    align-items: flex-start; /* Align content to the top */
+    gap: 20px; /* Space between nav and content */
+}
+
+/* Adjust Navigation */
+.woocommerce-MyAccount-navigation {
+    flex: 0 0 150px; /* Fixed width for sidebar */
+}
+
+/* Adjust Content */
+.woocommerce-MyAccount-content {
+    flex: 1; /* Takes remaining space */
+}
+/* My Account RESPONSIVENESS */
+
+/* Mobile (Under 768px) */
+@media screen and (max-width: 768px) {
+    .woocommerce-MyAccount-navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .woocommerce-MyAccount-navigation li {
+        width: 100%;
+    }
+
+    .woocommerce-MyAccount-navigation a {
+        text-align: center;
+        padding: 12px;
+    }
+
+    .woocommerce-MyAccount-content {
+        padding: 15px;
+    }
+
+    .woocommerce form {
+        padding: 15px;
+    }
+
+    .woocommerce-MyAccount-title {
+        font-size: 20px;
+    }
+}
+
+/* Tablet (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .woocommerce-MyAccount-navigation {
+        width: 100%;
+    }
+
+    .woocommerce-MyAccount-content {
+        width: 100%;
+    }
+}
+
+
+/* Checkout Page */
+body {
+    background-color: #e9cac8; /* Background */
+    color: #0c0f17; 
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Container */
+.woocommerce-checkout {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+.woocommerce-checkout h1,
+.woocommerce-checkout h2 {
+    color: #b1a79c; 
+    text-align: center;
+}
+
+/* Form Styling */
+.woocommerce-checkout form {
+    background-color: #f0f0f0; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input Fields */
+.woocommerce-checkout input[type="text"],
+.woocommerce-checkout input[type="email"],
+.woocommerce-checkout input[type="tel"],
+.woocommerce-checkout textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #c37e95; /* Secondary */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Buttons */
+.woocommerce-checkout button {
+    background-color: #e79fb5; /* Button */
+    color: #0c0f17; /* Text */
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+
+.woocommerce-checkout button:hover {
+    background-color: #c37e95; /* Darker secondary on hover */
+}
+
+/* Order Review & Payment Sections */
+.woocommerce-checkout-review-order,
+.woocommerce-checkout-payment {
+    background-color: #f0f0f0; /* White */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .woocommerce-checkout {
+        padding: 15px;
+    }
+
+    .woocommerce-checkout form {
+        padding: 15px;
+    }
+
+    .woocommerce-checkout input,
+    .woocommerce-checkout textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .woocommerce-checkout button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Mobile Optimization */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .woocommerce-checkout {
+        padding: 10px;
+    }
+
+    .woocommerce-checkout form {
+        padding: 10px;
+    }
+
+    .woocommerce-checkout input,
+    .woocommerce-checkout textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .woocommerce-checkout button {
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+    }
+}
+/* About Us Page- tablet and mobile */
+/* Tablet view */
+@media (max-width: 1024px) {
+    .header-container {
+      flex-direction: row;
+      padding: 10px 15px;
+    }
+  
+    .nav-menu {
+      gap: 15px;
+    }
+  
+    .search-bar {
+      width: 200px;
+    }
+  }
+  
+  /* Mobile view */
+  @media (max-width: 768px) {
+    .header-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .nav-menu {
+      display: none; /* Hide by default */
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .menu-toggle {
+      display: block; /* Show hamburger menu */
+      cursor: pointer;
+    }
+  
+    .wp-block-search__inside-wrapper {
+        width: 100%; 
+        max-width: 250px; 
+      }
+  }
+  
